@@ -14,7 +14,7 @@ import br.com.redelognet.loginauthapi.entities.User;
 @Service
 public class TokenService {
 
-	@Value("${api.security.token.secret}")
+	@Value("${security.api.token.secret}")
 	private String secret;
 	
 	public String generateToken(User user) {
