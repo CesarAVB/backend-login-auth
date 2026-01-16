@@ -100,6 +100,13 @@
 	</dependencies>
 
 	<build>
+        <!-- Desabilita filtering em recursos para evitar problemas de encoding ao copiar arquivos .properties -->
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
